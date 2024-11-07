@@ -1,0 +1,191 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#map-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#map-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: none;
+    max-height: none;
+    transition: transform 0.5s ease;
+    cursor: grab;
+    user-select: none; /* Prevent text selection while dragging */
+}
+
+#map-image:active {
+    cursor: grabbing;
+}
+
+#message-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: purple;
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 100;
+}
+
+#image-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(4); /* Scale the image to its original size */
+    background-size: contain; /* Ensure the image is scaled proportionally */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    z-index: 101;
+}
+
+#lyric-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: lavender; /* 淡紫色背景 */
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 102;
+    text-align: center; /* 使按钮在歌词下方显示 */
+}
+
+#lyric-box button {
+    margin-top: 10px; /* 按钮与歌词之间的间距 */
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#trap-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(225, 225, 152); /* 黄色背景 */
+    color: rgb(214, 130, 130);
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 103;
+}
+
+#reward-box {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: green; /* 绿色背景 */
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 104;
+}
+
+#video-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 105;
+}
+
+#video-box .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#shanxi-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(141, 141, 228); /* 蓝色背景 */
+    color: rgb(133, 225, 176);
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 106;
+    text-align: center;
+}
+
+#shanxi-box button {
+    margin-top: 10px; /* 按钮与问题之间的间距 */
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#lanzhou-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(128, 128, 202); /* 蓝色背景 */
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 106;
+    text-align: center;
+}
+
+#lanzhou-box button {
+    margin-top: 10px; /* 按钮与问题之间的间距 */
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#chongqing-box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(128, 128, 202); /* 蓝色背景 */
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 106;
+    text-align: center;
+}
+
+#chongqing-box button {
+    margin-top: 10px; /* 按钮与问题之间的间距 */
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
